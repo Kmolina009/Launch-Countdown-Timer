@@ -91,3 +91,17 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+---
+
+# **Built with**
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Vanilla JS(ES6)
+
+## **Project Tracking**
+[MY Trello](https://trello.com/b/T7wHeu6Q/project-sprint)
