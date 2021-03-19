@@ -8,14 +8,15 @@ setInterval( ()=>{
 //Time units
 let days = Math.floor(timeRemaining/(1000*60*60*24));
 let hours = Math.floor(timeRemaining%(1000*60*60*24)/(1000*60*60));
-let minutes = Math.floor(timeRemaining%(1000*60*60*24)/(1000*60))
+let minutes = Math.floor(timeRemaining%(1000*60*60)/(1000*60))
 let seconds = Math.floor(timeRemaining%(1000*60)/1000)
 // console.log(seconds)
+console.log(minutes)
  let someFormattedDate = `
  -------------------------------------------------------------------------------
 // | ${days} Day Left | ${hours} Hours left | ${minutes} Minutes Left | ${seconds} Seconds left |
  -------------------------------------------------------------------------------
  `;
- console.log(someFormattedDate)
+//  console.log(someFormattedDate)
 },1000)
 
