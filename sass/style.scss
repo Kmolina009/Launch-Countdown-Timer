@@ -1,9 +1,12 @@
 // Import Base
 @import "_base" ;
-
+@import "launch-timer";
+@import "_footer";
 
 
 .attribution { 
+    position: relative;
+    top: 710px;
     font-size: 11px; text-align: center; 
 }
 .attribution a { 

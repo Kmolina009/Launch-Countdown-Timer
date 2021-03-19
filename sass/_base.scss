@@ -1,4 +1,7 @@
 // Font attributes and import
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+$app-font: 'Red Hat Text', sans-serif;
+$font-weight: 700;
 // Media Query
 //Colors
 $grayish-blue: hsl(237,18,59);
@@ -9,18 +12,43 @@ $Dark-desaturated-blue: hsl(236, 21, 26);
 $Very-dark-blue: hsl(235, 16, 14);
 $darkest-blue: hsl(234, 17, 12);
 
+// @media only screen and (min-width: $size){
+//     @content;
+// }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
+    display: flex;
+    justify-content: center;
+    // height: 667px;
+    min-height: 100%;
     width: 375px;
-    background-color: $Dark-desaturated-blue;
+    background-color: $Very-dark-blue;
     background-image: url(../images/bg-stars.svg);
     background-size: 375px 667px;
+    font-family: $app-font;
     main{
+        position: absolute;
+        top:168px;
         display: flex;
         flex-direction: column;
         width: 335px;
         height: 220px;
         h1{
+            font-size: 20px;
+            text-align: center;
             color:$White;
+            margin: 50px 0px;
+            letter-spacing: 0.23em;
+            // line-height: 24%;
+        span::before{
+            content: "\A";
+            white-space: pre;
+        }
         }
     }
 }
