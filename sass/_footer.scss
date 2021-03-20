@@ -1,18 +1,37 @@
+@import "_base";
 footer{
-    display: block;
+    display: flex;
     position: absolute;
-    top: 50px;
+    top: 500px;
     height: 169px;
     width: 100vw;
-    text-indent: -9999px;
-    // background-color: black;
+    justify-content: center;
+    z-index: 1;
+    background-image: url('../images/pattern-hills.svg');
+    // content:"";
+    // background-size: 1440px 197px;
+    // background-size: contain;
+    background-size: 375px 169px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .s-media-link{
+        display: flex;
+        height: 100px;
+        width: 100vw;
+        justify-content: center;
+        i{
+            height: 32px;
+            width: 32px;
+            color:$grayish-blue;
+            cursor: pointer;
+        }
+        i:hover{
+            height: 32px;
+            width: 32px;
+            color:$soft-red;
+        }
+    }
 
 }
-footer::after{
-    position: relative;
-    
-    content:"";
-    background: url(/images/pattern-hills.svg);
-    background-size: 375px 116px;
-    background-repeat: no-repeat;
-}
+
+
