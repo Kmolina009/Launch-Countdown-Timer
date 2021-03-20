@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./dist/css/style.css">
   <title>Frontend Mentor | Launch countdown timer</title>
@@ -12,20 +13,50 @@
 
 </head>
 <body>
-
-  We're launching soon
-
-  Days
-  Hours
-  Minutes
-  Seconds
+  <main alt="Launch Timer">
+   <h1 alt="We're Launching Soon">We're Launching <span>Soon</span></h1>
+    <section id=time-container>
+      <section class="time-card" id="days">
+        <h2>08</h2>
+        <h3>
+          Days
+        </h3>
+      </section>
+      <section class="time-card" id="hours">
+        <h2>23</h2>
+        <h3>
+          Hours
+        </h3>
+        <!-- <div class="card"></div>
+        <div></div> -->
+      </section>
+      <section class="time-card" id="minutes">
+        <h2>55</h2>
+        <h3>
+          Minutes
+        </h3>
+      </section>
+      <section class="time-card" id="seconds">
+        <h2>41</h2>
+        <h3>
+          Seconds
+        </h3>
+      </section>
+    </section>
+  </main>
   
+  <footer>
+    <nav class="s-media-link" alt="">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-pinterest"></i>
+      <i class="fab fa-instagram"></i>
+    </nav>
+    <!-- <div></div> -->
+  </footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Keven Molina</a>.
   </div>
-  <style>
-
-  </style>
+<script src="./scripts/countdown.js"></script>
 </body>
 </html>

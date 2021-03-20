@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  width: 375px;
+  background-color: #1e1f29;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body main {
+  position: absolute;
+  top: 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 335px;
+  height: 220px;
+}
+
+body main h1 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin: 50px 0px;
+  letter-spacing: 0.23em;
+}
+
+body main h1 span::before {
+  content: "\A";
+  white-space: pre;
+}
+
+@use "_base";
+#time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#time-container .time-card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  width: 71px;
+  height: 89px;
+  background-color: #343650;
+}
+
+#time-container h2 {
+  position: relative;
+  bottom: 10px;
+  color: #fb6087;
+  font-size: 39px;
+  margin: 29px 0px;
+}
+
+#time-container h3 {
+  position: relative;
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.27em;
+  color: #8486a9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  width: 375px;
+  background-color: #1e1f29;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body main {
+  position: absolute;
+  top: 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 335px;
+  height: 220px;
+}
+
+body main h1 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin: 50px 0px;
+  letter-spacing: 0.23em;
+}
+
+body main h1 span::before {
+  content: "\A";
+  white-space: pre;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 500px;
+  height: 169px;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  background-image: url("../images/pattern-hills.svg");
+  background-size: 375px 169px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+footer .s-media-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .s-media-link i {
+  height: 32px;
+  width: 32px;
+  color: #8486a9;
+  cursor: pointer;
+}
+
+footer .s-media-link i:hover {
+  height: 32px;
+  width: 32px;
+  color: #fb6087;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  width: 375px;
+  background-color: #1e1f29;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body main {
+  position: absolute;
+  top: 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 335px;
+  height: 220px;
+}
+
+body main h1 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin: 50px 0px;
+  letter-spacing: 0.23em;
+}
+
+body main h1 span::before {
+  content: "\A";
+  white-space: pre;
+}
+
+.attribution {
+  position: relative;
+  top: 710px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
