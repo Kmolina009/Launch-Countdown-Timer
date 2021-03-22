@@ -14,6 +14,7 @@ $darkest-blue: hsl(234, 17, 12);
 
 
 
+
 *{
     margin: 0;
     padding: 0;
@@ -33,15 +34,16 @@ body{
         top:168px;
         display: flex;
         flex-direction: column;
-        width: 335px;
-        height: 220px;
+        // width: 335px;
+        width: 89%;
+        height: 36%;
         h1{
             font-size: 20px;
+            font-size: 125%;
             text-align: center;
             color:$White;
             margin: 50px 0px;
             letter-spacing: 0.23em;
-            // line-height: 24%;
         span::before{
             content: "\A";
             white-space: pre;

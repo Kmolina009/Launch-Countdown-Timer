@@ -3,22 +3,29 @@
 #time-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content:space-around;
+    flex-wrap: wrap;
     .time-card{
         flex-direction: column;
         justify-content: center;
         align-content: center;
         text-align: center;
-        width: 71px;
-        height: 89px;
+        max-width: 22%;
+        min-width: 71px;
+        // height: 68px;
+        // height: 72%;
+        max-height: 8.97vh;
         background-color: $Dark-desaturated-blue;
+        box-shadow: 0px 10px 0px 0px $darkest-blue;
     }
     h2{ 
         position: relative;
-        bottom: 10px;
+        bottom: 20px;
         color: $soft-red;
         font-size: 39px;
         margin: 29px 0px;
+        // vertical-align: 75%;
     }
     h3{
         // margin: 20px;
