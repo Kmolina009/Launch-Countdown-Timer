@@ -12,9 +12,8 @@ $Dark-desaturated-blue: hsl(236, 21, 26);
 $Very-dark-blue: hsl(235, 16, 14);
 $darkest-blue: hsl(234, 17, 12);
 
-// @media only screen and (min-width: $size){
-//     @content;
-// }
+
+
 
 *{
     margin: 0;
@@ -26,25 +25,25 @@ body{
     justify-content: center;
     // height: 667px;
     min-height: 100%;
-    width: 375px;
+    width: 100vw;
     background-color: $Very-dark-blue;
     // background-image: url('../images/bg-stars.svg');
-    // background-size: 375px 667px;
     font-family: $app-font;
     main{
         position: absolute;
         top:168px;
         display: flex;
         flex-direction: column;
-        width: 335px;
-        height: 220px;
+        // width: 335px;
+        width: 89%;
+        height: 36%;
         h1{
             font-size: 20px;
+            font-size: 125%;
             text-align: center;
             color:$White;
             margin: 50px 0px;
             letter-spacing: 0.23em;
-            // line-height: 24%;
         span::before{
             content: "\A";
             white-space: pre;

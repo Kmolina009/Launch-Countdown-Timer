@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100%;
-  width: 375px;
+  width: 100vw;
   background-color: #1e1f29;
   font-family: "Red Hat Text", sans-serif;
 }
@@ -31,12 +30,13 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 335px;
-  height: 220px;
+  width: 89%;
+  height: 36%;
 }
 
 body main h1 {
   font-size: 20px;
+  font-size: 125%;
   text-align: center;
   color: white;
   margin: 50px 0px;
@@ -57,9 +57,10 @@ body main h1 span::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #time-container .time-card {
@@ -73,14 +74,17 @@ body main h1 span::before {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
-  width: 71px;
-  height: 89px;
+  max-width: 22%;
+  min-width: 71px;
+  max-height: 8.97vh;
   background-color: #343650;
+  -webkit-box-shadow: 0px 10px 0px 0px #191a24;
+          box-shadow: 0px 10px 0px 0px #191a24;
 }
 
 #time-container h2 {
   position: relative;
-  bottom: 10px;
+  bottom: 20px;
   color: #fb6087;
   font-size: 39px;
   margin: 29px 0px;
@@ -111,7 +115,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100%;
-  width: 375px;
+  width: 100vw;
   background-color: #1e1f29;
   font-family: "Red Hat Text", sans-serif;
 }
@@ -126,12 +130,13 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 335px;
-  height: 220px;
+  width: 89%;
+  height: 36%;
 }
 
 body main h1 {
   font-size: 20px;
+  font-size: 125%;
   text-align: center;
   color: white;
   margin: 50px 0px;
@@ -148,7 +153,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 500px;
+  top: 650px;
   height: 169px;
   width: 100vw;
   -webkit-box-pack: center;
@@ -185,51 +190,49 @@ footer .s-media-link i:hover {
   color: #fb6087;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@media screen and (min-width: 768px) {
+  #time-container {
+    padding: 0% 20%;
+  }
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 100%;
-  width: 375px;
-  background-color: #1e1f29;
-  font-family: "Red Hat Text", sans-serif;
-}
-
-body main {
-  position: absolute;
-  top: 168px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 335px;
-  height: 220px;
-}
-
-body main h1 {
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  margin: 50px 0px;
-  letter-spacing: 0.23em;
-}
-
-body main h1 span::before {
-  content: "\A";
-  white-space: pre;
+@media screen and (min-width: 1024px) {
+  main {
+    height: 427px;
+    width: 805px;
+  }
+  main h1 {
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.23em;
+    margin-top: 0px;
+  }
+  main #time-container {
+    padding: 0px;
+    height: 187px;
+    width: 692px;
+    margin: 0 auto;
+  }
+  main #time-container .time-card {
+    max-height: 143px;
+    width: 148px;
+    margin: 0px;
+  }
+  main #time-container .time-card h2 {
+    position: relative;
+    top: 10px;
+    font-size: 81px;
+    line-height: 68.5%;
+    letter-spacing: -0.03em;
+  }
+  main #time-container .time-card h3 {
+    position: relative;
+    top: 55px;
+    font-size: 16px;
+    line-height: 139.5%;
+    letter-spacing: 0.27em;
+  }
 }
 
 .attribution {
