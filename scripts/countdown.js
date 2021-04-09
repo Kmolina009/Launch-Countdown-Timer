@@ -1,12 +1,12 @@
 'use strict '  
 //DOM Element 
-document.querySelector('h1').innerText = "We're moving soon"
+// document.querySelector('h1').innerText = "We're moving soon"
 
 
 const timer = document.querySelector('#time-container');
 const timeCardUnits = document.querySelectorAll('.time-card h2');
 const timeCardTitles = document.querySelectorAll('.time-card h3');
-const deadLine =new Date("Oct 30, 2021, 00:00:00");
+const deadLine =new Date("May 30, 2021, 00:00:00");
 
 function assignTimeUnitValue(obj,domElem,title){
  let cardTitle=title.innerText.toLowerCase();
