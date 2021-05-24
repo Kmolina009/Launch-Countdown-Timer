@@ -7,11 +7,10 @@ footer{
     width: 100vw;
     justify-content: center;
     z-index: 1;
-    background-image: url('../images/pattern-hills.svg');
+    background-image: url(/images/pattern-hills.svg);
     // content:"";
-    // background-size: 1440px 197px;
-    // background-size: contain;
-    background-size: 375px 169px;
+    background-size: 100% 197px;
+    // 197px
     background-position: center center;
     background-repeat: no-repeat;
     .s-media-link{
