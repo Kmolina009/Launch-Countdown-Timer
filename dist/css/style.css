@@ -17,6 +17,7 @@ body {
   min-height: 100%;
   width: 100vw;
   background-color: #1e1f29;
+  background-image: url(/images/bg-stars.svg);
   font-family: "Red Hat Text", sans-serif;
 }
 
@@ -66,20 +67,20 @@ body main h1 span::before {
 #time-container .time-card {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
   max-width: 22%;
   min-width: 71px;
-  max-height: 8.97vh;
+  max-height: 9.97vh;
   background-color: #343650;
   -webkit-box-shadow: 0px 10px 0px 0px #191a24;
-          box-shadow: 0px 10px 0px 0px #191a24;
+  box-shadow: 0px 10px 0px 0px #191a24;
 }
 
 #time-container h2 {
@@ -112,24 +113,25 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 100%;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 98%;
   width: 100vw;
   background-color: #1e1f29;
+  background-image: url(/images/bg-stars.svg);
   font-family: "Red Hat Text", sans-serif;
 }
 
 body main {
   position: absolute;
-  top: 168px;
+  top: 167px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 89%;
   height: 36%;
 }
@@ -153,15 +155,15 @@ footer {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 650px;
+  top: 649px;
   height: 169px;
   width: 100vw;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   z-index: 1;
-  background-image: url("../images/pattern-hills.svg");
-  background-size: 375px 169px;
+  background-image: url(/images/pattern-hills.svg);
+  background-size: 100% 197px;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -192,7 +194,7 @@ footer .s-media-link i:hover {
 
 @media screen and (min-width: 768px) {
   #time-container {
-    padding: 0% 20%;
+    padding: 1% 20%;
   }
 }
 
