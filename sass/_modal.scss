@@ -1,0 +1,91 @@
+.modal{
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    top: 0;
+    height: 22rem;
+    width: 40rem;
+    background-color: $Dark-desaturated-blue;
+    box-shadow:0px 10px 0px 0px #191a2458 ;
+    justify-content: space-around;
+    z-index: 1;
+    form{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        top: 1.5rem;
+        // background-color: aqua;
+        height: 90%;
+        width: 100%;
+        form>*{
+            margin: 1rem 0;
+        }
+        label{
+            position: relative;
+            top: 40px;
+            font-family: $app-font;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+        }
+        input{
+            position: relative;
+            margin: 0 auto;
+            width: 300px;
+            height: 40px;
+            top: 40px;
+        }
+        .modal-input{
+            background-color: $soft-red;
+            font-family: $app-font;
+            font-weight: $font-weight;
+        &placeholder{
+            position: relative;
+            font-size: 12px;
+            left: 10%;
+        }
+        }
+
+        div.btn-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-top: 0;
+            width: 500px;
+            input[data-btn="modal-btn"]{
+                top: 60px;
+                padding: 0;
+                background-color: $Dark-desaturated-blue;
+                width: 150px;
+                height: 4rem;
+                text-align: center;
+                box-shadow:0px 3px 3px 0px #04062568 ;
+                border-width: 1px;
+                // border-color: -internal-light-dark(rgb(39, 4, 4), rgb(14, 3, 30));
+                font-size: 1.5rem;
+                font-weight: $font-weight;
+                color: $soft-red;
+                border-radius: .5rem;
+            }
+        }
+    }
+    .close-btn{
+        position: relative;
+        text-align: center;
+        font-weight: 600;
+        font-size: 2rem;
+        left: 36rem;
+        top: 1rem;
+        height: 3rem;
+        width: 3rem;
+        color: $soft-red;
+        box-shadow:0px 3px 3px 0px #04062568 ;
+        // border: 1px solid black;
+        &:hover{
+            cursor: pointer;
+            background-color: #07091758;    
+        }
+    }
+}
