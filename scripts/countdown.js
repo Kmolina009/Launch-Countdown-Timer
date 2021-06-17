@@ -1,12 +1,12 @@
 'use strict '  
 //DOM Element 
-// document.querySelector('h1').innerText = "We're moving soon"
+document.querySelector('h1').innerText = "We're off on vacation soon";
 
 
 const timer = document.querySelector('#time-container');
 const timeCardUnits = document.querySelectorAll('.time-card h2');
 const timeCardTitles = document.querySelectorAll('.time-card h3');
-const deadLine =new Date("May 30, 2021, 00:00:00");
+const deadLine =new Date("Aug 5, 2021, 00:00:00");
 
 function assignTimeUnitValue(obj,domElem,title){
  let cardTitle=title.innerText.toLowerCase();
@@ -39,9 +39,9 @@ setInterval( ()=>{
 // console.log(startTime)
 //Time units(This could be refactored into a function call)
 let timeUnits={
-  "days":Math.floor(timeRemaining/(1000*60*60*24)),
-  "hours":Math.floor(timeRemaining%(1000*60*60*24)/(1000*60*60)),
-  "minutes": Math.floor(timeRemaining%(1000*60*60)/(1000*60)),
+ "days":Math.floor(timeRemaining/(1000*60*60*24)),
+ "hours":Math.floor(timeRemaining%(1000*60*60*24)/(1000*60*60)),
+ "minutes": Math.floor(timeRemaining%(1000*60*60)/(1000*60)),
  "seconds":Math.floor(timeRemaining%(1000*60)/1000)
 };
 for (let i = 0; i < timeCardTitles.length; i++) {
