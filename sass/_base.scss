@@ -44,10 +44,12 @@ body{
             color:$White;
             margin: 50px 0px;
             letter-spacing: 0.23em;
+            cursor: pointer;
         span::before{
             content: "\A";
             white-space: pre;
         }
         }
+        
     }
 }
