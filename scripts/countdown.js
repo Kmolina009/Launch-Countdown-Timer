@@ -50,4 +50,5 @@ for (let i = 0; i < timeCardTitles.length; i++) {
 }
 },1000);
 
-console.log(timer)
+// console.log(timer)
+

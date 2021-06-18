@@ -15,7 +15,7 @@
 <body>
   <!-- DROPDOWN SECTION -->
   <div class=modal>
-    <div class="close-btn">
+    <div class="close-btn" data-btn="close">
       X
     </div>
     <form>
@@ -24,8 +24,8 @@
       <label for="user" class="modal-label">When is it?</label>
       <input type="date" class="modal-input" name="Date-Set" id="">
       <div class="btn-container">
-        <input type="button" value="Confirm" data-btn="modal-btn">
-        <input type="button" value="Cancel" data-btn="modal-btn">
+        <input type="button" value="Confirm" class=modal-btn data-btn="confirm">
+        <input type="button" value="Cancel" class=modal-btn data-btn="close">
       </div>
     </form>
   </div>
@@ -75,5 +75,6 @@
     Coded by <a href="#">Keven Molina</a>.
   </div>
 <script src="./scripts/countdown.js"></script>
+<script src="./scripts/modal-contriols.js"></script>
 </body>
 </html>
