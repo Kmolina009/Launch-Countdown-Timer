@@ -6,7 +6,29 @@ document.querySelector('h1').innerText = "We're off on vacation soon";
 const timer = document.querySelector('#time-container');
 const timeCardUnits = document.querySelectorAll('.time-card h2');
 const timeCardTitles = document.querySelectorAll('.time-card h3');
-const deadLine =new Date("Aug 5, 2021, 00:00:00");
+
+
+let deadLine =new Date(localStorage.getItem("Launch Date"));
+
+// Default date value is 7 days into the future
+//Set default then when there isn't one in localStorage
+if(localStorage.length < 2){
+  let defaultDate = new Date();
+  deadLine = defaultDate.setDate(defaultDate.getDate()+9);
+  console.log(deadLine)
+}
+
+// Set a default date
+// TODO - Retrieve localStorage data if local storage length is greeater than 0
+// When a new launch-data  is submitted, should the function  be placed on the 
+
+
+
+// const deadLine = new Date(localStorage.getItem("launchTime",`${deadLine}`) )
+// deadLine = new Date(localStorage.getItem("Launch Date") );
+// localStorage.getItem("launchTime",`${deadLine}`)
+// console.log(localStorage)
+
 
 function assignTimeUnitValue(obj,domElem,title){
  let cardTitle=title.innerText.toLowerCase();
