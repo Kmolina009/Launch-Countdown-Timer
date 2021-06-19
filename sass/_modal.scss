@@ -1,6 +1,6 @@
 .modal{
     position: absolute;
-    display: flex;
+    display: none;
     margin: 0 auto;
     top: 0;
     height: 22rem;
@@ -83,6 +83,7 @@
         color: $soft-red;
         box-shadow:0px 3px 3px 0px #04062568 ;
         // border: 1px solid black;
+        z-index: 2;
         &:hover{
             cursor: pointer;
             background-color: #07091758;    

@@ -241,9 +241,7 @@ footer .s-media-link i:hover {
 
 .modal {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin: 0 auto;
   top: 0;
   height: 22rem;
@@ -349,7 +347,7 @@ footer .s-media-link i:hover {
   width: 3rem;
   color: #fb6087;
   -webkit-box-shadow: 0px 3px 3px 0px #04062568;
-  box-shadow: 0px 3px 3px 0px #04062568;
+          box-shadow: 0px 3px 3px 0px #04062568;
   z-index: 2;
 }
 
