@@ -22,6 +22,8 @@ $darkest-blue: hsl(234, 17, 12);
 }
 body{
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     justify-content: center;
     // height: 667px;
     min-height: 100%;

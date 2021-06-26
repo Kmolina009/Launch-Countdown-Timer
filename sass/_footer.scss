@@ -1,8 +1,10 @@
 @import "_base";
 footer{
     display: flex;
-    position: absolute;
-    top: 650px;
+    position: relative;
+    // position: fixed;
+    // top: 650px;
+    top: 50rem;
     height: 169px;
     width: 100vw;
     justify-content: center;
