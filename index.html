@@ -13,6 +13,23 @@
 
 </head>
 <body>
+  <!-- DROPDOWN SECTION -->
+  <div class=modal>
+    <div class="close-btn" data-btn="close">
+      X
+    </div>
+    <form>
+      <label for="user" class="modal-label">What is it?</label>
+      <input type="text" class="modal-input" name="Launch-Header" id="">
+      <label for="user" class="modal-label">When is it?</label>
+      <input type="date" class="modal-input" name="Date-Set" id="">
+      <div class="btn-container">
+        <input type="button" value="Confirm" class=modal-btn data-btn="confirm">
+        <input type="button" value="Cancel" class=modal-btn data-btn="close">
+      </div>
+    </form>
+  </div>
+  <!-- DROPDOWN SECTION -->
   <main alt="Launch Timer">
    <h1 alt="We're Launching Soon">We're Launching <span>Soon</span></h1>
     <section id=time-container>
@@ -58,5 +75,6 @@
     Coded by <a href="#">Keven Molina</a>.
   </div>
 <script src="./scripts/countdown.js"></script>
+<script src="./scripts/modal-contriols.js"></script>
 </body>
 </html>

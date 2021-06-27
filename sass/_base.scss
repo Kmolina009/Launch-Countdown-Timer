@@ -22,12 +22,14 @@ $darkest-blue: hsl(234, 17, 12);
 }
 body{
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     justify-content: center;
     // height: 667px;
     min-height: 100%;
     width: 100vw;
     background-color: $Very-dark-blue;
-    // background-image: url('../images/bg-stars.svg');
+    background-image: url(/images/bg-stars.svg);
     font-family: $app-font;
     main{
         position: absolute;
@@ -44,10 +46,12 @@ body{
             color:$White;
             margin: 50px 0px;
             letter-spacing: 0.23em;
+            cursor: pointer;
         span::before{
             content: "\A";
             white-space: pre;
         }
         }
+        
     }
 }
